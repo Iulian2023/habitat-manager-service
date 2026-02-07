@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { HabitatModule } from './habitat/habitat.module';
+import { EnclosureModule } from './enclosure/enclosure.module';
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { HabitatModule } from './habitat/habitat.module';
       }),
     }),
     HabitatModule,
+    EnclosureModule,
   ],
   controllers: [],
   providers: [],
